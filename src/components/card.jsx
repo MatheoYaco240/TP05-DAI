@@ -2,14 +2,15 @@ import { toHaveDisplayValue } from "@testing-library/jest-dom/matchers";
 import { getByDisplayValue } from "@testing-library/react";
 import React, { Fragment } from "react";
 import {StyleSheet,Text, Image} from "react-native";
+import { View } from "react-native-web";
 import centralPerk from '../imgs/coffee1.jpeg';
 
 const Card = () => {
   return (
-    <div style={styles.card} >
+    <View className='App' style={styles.card} >
       <img src={centralPerk} style={styles.img} alt=""/>
       <Text style={styles.text}>Mocha</Text>
-    </div>
+    </View>
   );
 };
 
